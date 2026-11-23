@@ -38,7 +38,7 @@ jobs:
       - name: Construir imagen
         run: docker build -t minico-app:${{ github.sha }} .
       - name: Escanear imagen con Trivy
-        uses: aquasecurity/trivy-action@0.28.0
+        uses: aquasecurity/trivy-action@0.33.1
         with:
           image-ref: minico-app:${{ github.sha }}
           severity: CRITICAL,HIGH
