@@ -6,3 +6,5 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     return "MinicoDevelopers - Aplicacion segura"
+
+#Gitleaks exito
